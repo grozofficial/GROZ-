@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /server/
-Disallow: /README.md
-
 Sitemap: https://YOUR-DOMAIN.example/sitemap.xml

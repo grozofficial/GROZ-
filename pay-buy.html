@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pay & Buy — GROZ</title><link rel="stylesheet" href="assets/style.css"></head>
+<body data-page="pay"><div id="site-header"></div>
+<main class="page"><header class="page-head"><span class="eyebrow">GROZ / PAY & BUY</span><h1><span data-i18n="payTitle">Pay.</span> <b data-i18n="buyTitle">Buy.</b></h1><p data-i18n="payText">Payment selection and order details are together here. There is no separate payment page.</p></header>
+<section class="pay-grid">
+  <div class="panel">
+    <h2 data-i18n="paymentMethod">Payment method</h2>
+    <div id="payment-methods" class="payment-methods"></div>
+    <div id="payment-number" class="payment-number hidden"></div>
+    <div id="cod-note" class="notice hidden" data-i18n="codNote">Cash on Delivery selected. Transaction ID is not required.</div>
+  </div>
+  <div class="panel">
+    <h2 data-i18n="orderDetails">Your order details</h2>
+    <form id="order-form">
+      <div class="form-grid">
+        <label><span data-i18n="product">Product</span><input id="order-product" required></label>
+        <label><span data-i18n="quantity">Quantity</span><input id="order-qty" type="number" min="1" value="1" required></label>
+        <label><span data-i18n="fullName">Full name</span><input id="customer-name" required></label>
+        <label><span data-i18n="phone">Phone</span><input id="customer-phone" required></label>
+        <label><span data-i18n="email">Email</span><input id="customer-email" type="email"></label>
+        <label><span data-i18n="amount">Order amount</span><input id="order-amount" readonly></label>
+      </div>
+      <label><span data-i18n="address">Delivery address</span><textarea id="customer-address" required></textarea></label>
+      <label id="tx-wrap"><span data-i18n="transaction">Transaction ID</span><input id="transaction-id" placeholder="Enter transaction ID after payment"></label>
+      <label class="check"><input id="confirm" type="checkbox" required><span data-i18n="confirm">I confirm that my payment and order details are correct.</span></label>
+      <button class="btn wide" type="submit" data-i18n="sendWhatsApp">Send order to WhatsApp →</button>
+      <p class="small-note" data-i18n="paymentWarning">For online payment, send the exact amount to the selected GROZ number, then enter the transaction ID. Incorrect amount or transaction ID may prevent confirmation.</p>
+    </form>
+  </div>
+</section>
+</main><div id="site-footer"></div><script src="assets/app.js"></script></body></html>
